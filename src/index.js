@@ -1,6 +1,6 @@
 module.exports = function towelSort(matrix) {
-    let a = [];
-    if (arguments.length == 0) a = [];
+    let arr = [];
+    if (arguments.length == 0) arr = [];
     else
         for (let i = 0; i < matrix.length; i++) {
             if (i % 2 == 0) {
@@ -11,5 +11,5 @@ module.exports = function towelSort(matrix) {
                     a.push(matrix[i][j]);
             }
         }
-    return (arguments.length == 0 || arguments == null) ? [] : a;
+    return (arguments.length == 0 || arguments == null) ? [] : arr;
 }
